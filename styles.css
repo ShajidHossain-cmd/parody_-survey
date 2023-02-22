@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 0.5rem;
+    
+}
+div {
+    width: 40vw;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+form {
+    padding: 10px;
+    width: 100%;
+}
+select,input, textarea {
+    margin: 10px 0 0 0 ;
+    width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: unset;
+}
+.notice {
+    font-size: large;
+    color: red;
+    text-align: center;
+}
+ h2 {
+    margin-left: 144px;
+}
+p {
+    font-family: cursive;
+    margin: 0 144px;
+}
+fieldset {
+    border:none
+}
+input, textarea {
+    background-color: rgb(86, 135, 119);
+    border-color: aquamarine;
+    color: white;
+}
+body {
+    background-color: cornflowerblue;
+}
