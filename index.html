@@ -2,78 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemtastic</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+<header class="header">
     <h1 id="title">Gemtastic</h1>
-    <h2>What is Gemtastic?</h2>
     <p id="description">
         Introducing Gemtastic, the ultimate gem-hacking website! With our state-of-the-art algorithms and advanced programming techniques, we've unlocked the secrets to generating unlimited gems for any game you play. Simply enter your username and select the game you want gems for, and within seconds, our system will add thousands of gems to your account. And the best part? It's all completely free! No more spending your hard-earned money on virtual currencies.
     </p>
     <p class="notice">(Note: This is a parody website and is not intended for actual use or promotion of illegal activities.)</p>
-    <div>     
- <form id="survey-form" method="post" action="">
-    <!--id,pass-->
-<fieldset>
-    <label id="name-label" for="name">Enter Your Username: <input id="name" name="name" type="text" placeholder="username" required /></label>
-    <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="email@.com" required /></label>
-    <label id="number-label" for="number">Enter the amount of gems you want: <input id="number" name="number" type="number" placeholder="gems" min="1" max="99999" required /></label>
-</fieldset>
-<!--dropdown-->
-<fieldset>
-    <label for="dropdown"> Select the game you want gems for:
-        <select name="dropdown" id="dropdown">
+</header>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Username</label>
+        <input id="name" name="name" type="text" class="form-control" placeholder="username" required />
+    </div>
+    <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" class="form-control" placeholder="email@.com" required />
+    </div>
+    <div class="form-group">
+        <label id="number-label" for="number">Gem Count</label>
+        <input id="number" name="number" type="number" class="form-control" placeholder="gems" min="1" max="99999" required />
+    </div>
+    <div class="form-group">
+        <p>Select the game you want gems for:</p>
+        <select name="dropdown" id="dropdown" class="form-control" required>
+            <option disabled selected value="">Chose a game</option>
             <option value="1">Clash of Clans</option>
             <option value="2">Clash Royale</option>
             <option value="3">Brawl Stars</option>
             <option value="4">Hay Day</option>
         </select>
-    </label>
-
-<!--radio-->
-
-<label for="android">
-    <input id="android" type="radio" name="os" value="android"> Android
-</label>
-<label for="ios">
-    <input id="ios" type="radio" name="os" value="ios"> iOS
-</label>
-</fieldset>
-<!--checkbox-->
-<fieldset> Vote for game you want to see next!
-<label for="Garena Free Fire">
-    <input id="Garena Free Fire" type="checkbox" name="games" value="Garena Free Fire"> Garena Free Fire
-</label>
-<label for="Call of Duty: Mobile">
-    <input id="Call of Duty: Mobile" type="checkbox" name="games" value="Call of Duty: Mobile"> Call of Duty: Mobile
-</label>
-<label for="Subway Surfers">
-    <input id="Subway Surfers" type="checkbox" name="games" value="Subway Surfers"> Subway Surfers
-</label>
-<label for="Candy Crush Saga">
-    <input id="Candy Crush Saga" type="checkbox" name="games" value="Candy Crush Saga"> Candy Crush Saga
-</label>
-<label for="Stumble Guys">
-    <input id="Stumble Guys" type="checkbox" name="games" value="Stumble Guys"> Stumble Guys
-</label>
-<label for="Asphalt 9: Legends">
-    <input id="Asphalt 9: Legends" type="checkbox" name="games" value="Asphalt 9: Legends"> Asphalt 9: Legends
-</label>
-<label for="Temple Run">
-    <input id="Temple Run" type="checkbox" name="games" value="Temple Run"> Temple Run
-</label>
-<label for="PUBG">
-    <input id="PUBG" type="checkbox" name="games" value="PUBG"> PUBG
-</label>
-<label for="comment">Any comments or suggestions?
-    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
-</label>
-</fieldset>
-<input id="submit" type="submit" value="Submit">
- </form>   
-</div>
+    </div>
+    <div class="form-group">
+        <p>OS</p>
+        <label>
+            <input id="android" type="radio" name="os" value="android"> Android
+        </label>
+        <label>
+            <input id="ios" type="radio" name="os" value="ios"> iOS
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Vote for game you want to see next!</p>
+        <label for="Garena Free Fire">
+            <input id="Garena Free Fire" type="checkbox" name="games" value="Garena Free Fire" class="input-checkbox">
+            Garena Free Fire
+        </label>
+        <label for="Call of Duty: Mobile">
+            <input id="Call of Duty: Mobile" type="checkbox" name="games" value="Call of Duty: Mobile" class="input-checkbox">
+            Call of Duty: Mobile
+        </label>
+        <label for="Subway Surfers">
+            <input id="Subway Surfers" type="checkbox" name="games" value="Subway Surfers" class="input-checkbox">
+            Subway Surfers
+        </label>
+        <label for="Candy Crush Saga">
+            <input id="Candy Crush Saga" type="checkbox" name="games" value="Candy Crush Saga" class="input-checkbox">
+            Candy Crush Saga
+        </label>
+        <label for="Stumble Guys">
+            <input id="Stumble Guys" type="checkbox" name="games" value="Stumble Guys" class="input-checkbox">
+            Stumble Guys
+        </label>
+        <label for="Asphalt 9: Legends">
+            <input id="Asphalt 9: Legends" type="checkbox" name="games" value="Asphalt 9: Legends" class="input-checkbox">
+            Asphalt 9: Legends
+        </label>
+        <label for="Temple Run">
+            <input id="Temple Run" type="checkbox" name="games" value="Temple Run" class="input-checkbox">
+            Temple Run
+        </label>
+        <label for="PUBG">
+            <input id="PUBG" type="checkbox" name="games" value="PUBG" class="input-checkbox">
+            PUBG
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+    </div>
+</form>
+    </div>
 </body>
 </html>
